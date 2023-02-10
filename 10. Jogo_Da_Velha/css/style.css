@@ -1,0 +1,152 @@
+body{
+    padding: 0;
+    margin: 0; 
+    background-color: rgb(139, 50, 50);
+}
+h1{
+    text-align: center;
+    margin-top: 2%;
+}
+
+.tabuleiro{
+    margin-top: 2%;
+    text-align: center; 
+}
+.coluna{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: rgb(168, 127, 73);
+}
+
+#exibir{
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-top: 2%;
+    padding: 2px;
+    display: none;
+    border: 2px solid black;
+    background-color: rgb(168, 127, 73);
+}
+.texto{
+    text-align: center;
+    text-decoration: solid;
+    font-size: 18px;
+}
+
+.x{
+    position: relative;
+}
+.x::after{
+    content: "\274C";
+    position: absolute;
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.o{
+    position: relative;
+}
+.o::after{
+    content: "\2B55";
+    position: absolute;
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.velha{
+    position: relative;
+    
+}
+.velha::after{
+    content: "\1F475";
+    position: absolute;
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#placar{
+    position: absolute;
+    top: 0;
+}
+#vitX{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(168, 127, 73);
+
+}
+#vitO{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: rgb(168, 127, 73);
+
+}
+.placarX{
+    font-size: 18px;
+    margin-left: 10px;
+    padding-left: 20px;
+    display: inline-block;
+}
+.placarO{
+    font-size: 18px;
+    margin-left: 20px;
+    padding-left: 20px;
+    display: inline-block;
+}
+
+#btnReniciar{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid black;
+    background-color: rgb(168, 127, 73);
+}
+#btnReniciar:hover{
+    background-color: rgb(197, 148, 84);
+}
+
+@media screen and (max-width:620px){
+    #btnReniciar{
+        width: 120px;
+    }
+}
+
+@media screen and (max-width:600px){
+    #placar{
+      position: relative;
+      text-align: center;
+    }
+    .placarX{
+   text-align: center;
+
+    }
+    .placarO{
+        margin-right: 17px;
+        text-align: center;
+    }
+    
+}
+
+
